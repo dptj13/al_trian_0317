@@ -23,37 +23,36 @@ class DataSet {
 }
 
 let d1 = new DataSet("선형회귀모델"); //메인 타이틀 //메뉴번호
-d1.set_content("보스턴 주택 가격 예측 선형 모델"); //서브 타이틀
-d1.set_img(0, {
-  imgtitle: "보스턴 주택 가격예측",
-  imgurl: "",
-  imglog: "",
-  sourceurl:
-    "https://docs.google.com/document/d/1UvD1fZNL9yjLORwxgAW5vD6C-A_RwL1zcNan9RZqmys/edit?usp=drive_link",
-}); //이미지타이틀
+d1.set_content("보스턴 주택 가격 예측 선형 회귀모델"); //서브 타이틀
+d1.set_img(0,{imgtitle: "보스턴 데이터 수신",imglog: "텐서플로우 보스턴 데이터셋 수신확인",sourceurl:""})
+d1.set_img(0,{imgtitle: "데이터 특성 파악",imglog:"각 필드별 데이터의 특성의 의미 및 값을 확인",ingurl: "",sourceurl:
+d1.set_img(0,{imgtitle: "데이터 연관성 확인",imglog: "가격정답과 데이터의 특성별 상호 연관도를 파악",ingurl:  "",sourceurl:
+d1.set_img(0,{imgtitle: "데이터 분포도 파악",imglog: "히스토그램을 이용하여 데이터의 분포와 이상치 데이터를 확인",ingurl:  "",sourceurl:
+d1.set_img(0,{imgtitle: "데이터 분포도 전환",imglog: "훈련 전처리를 위한 데이터를 평균 0 표준절차 1로 구성된 정규분포로 변환",ingurl:  "",sourceurl:
+d1.set_img(0,{imgtitle: "순차모델구성 및 훈련실행",imglog:"평균제곱오차법을 이용한 손실함수와 경사하강법을 이용한 최적화 함수로 컴파일 및 최적화된 훈련 15회 실행",ingurl:  "",sourceurl:
+d1.set_img(0,{imgtitle: "훈련 결과 시각화",imglog: "훈련 결과인 mse 손실값의 변화를 시각화 표현 ",ingurl:  "",sourceurl:
+d1.set_img(0,{imgtitle: "모델의 예측 결과 측정",imglog:"테스트 데이터를 주입하여 예측결과를 인출하고 실제 정답과 차이를 정확률로 표시 ",ingurl:  "",sourceurl:
 
-d1.set_content("캘리포니아 주태 가격 예측 선형 회귀모델");
-d1.set_img(1, {
-  imgtitle: "캘리포니아 주택 가격 예측",
-  imgurl: "",
-  imglog: "",
-  sourceurl:
-    "https://docs.google.com/document/d/1UvD1fZNL9yjLORwxgAW5vD6C-A_RwL1zcNan9RZqmys/edit?usp=drive_link",
-}); //이미지타이틀
 
-d1.set_content("당뇨상태 1년후 예측 선형 회귀모델");
-d1.set_img(2, {
-  imgtitle: "1년후 당뇨상태 예측",
-  ingurl: "",
-  imglog: "",
-  sourceurl:
+d1.set_content("캘리포니아 주택 가격 예측 선형 회귀모델")
+d1.set_img(1, {imgtitle: "",ingurl: "",imglog: "",sourceurl:
+d1.set_img(1, {imgtitle: "",ingurl: "",imglog: "",sourceurl:
+d1.set_img(1, {imgtitle: "",ingurl: "",imglog: "",sourceurl:
+d1.set_img(1, {imgtitle: "",ingurl: "",imglog: "",sourceurl:
+d1.set_img(1, {imgtitle: "",ingurl: "",imglog: "",sourceurl:
+d1.set_img(1, {imgtitle: "",ingurl: "",imglog: "",sourceurl:
+d1.set_img(1, {imgtitle: "",ingurl: "",imglog: "",sourceurl:
+d1.set_img(1, {imgtitle: "",ingurl: "",imglog: "",sourceurl:
+d1.set_img(1, {imgtitle: "",ingurl: "",imglog: "",sourceurl:
+d1.set_img(1, {imgtitle: "",ingurl: "",imglog: "",sourceurl:
+
+d1.set_content("당뇨상태 1년후 예측 선형 회귀모델")
+d1.set_img(2, {imgtitle: "1년후 당뇨상태 예측",ingurl: "",imglog: "",sourceurl:
     "https://docs.google.com/document/d/1rNVbHnhYGoozaqX_RsD3cErmKYzGUMvba9ihxbP2CKk/edit?usp=drive_link",
-}); //이미지타이틀
+}) //이미지타이틀
 
-d1.set_fill(
-  "서버의 보안성과 각 수행기능별 패턴을 분리하기 위해 Spring WAS 와 사용자 View 기능을 위해 웹브라우져에서 일반적인 작동이 가능한 HTML5 를 구현하며 데이터베이스 연동 대신 파일로 회원목록 저장"
-); //사용자 에필로그
-data_sets.push(d1);
+d1.set_fill("선형 회귀모델은 데이터를 이용하거나 다중데이터를 이용하여 연속적인 값을 출력하여 예측한다") //사용자 에필로그
+data_sets.push(d1)
 
 // menu2 =============================================================
 let d2 = new DataSet("공통모듈구현"); //메인타이틀
