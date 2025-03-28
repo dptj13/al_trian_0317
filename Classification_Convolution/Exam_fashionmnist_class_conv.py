@@ -54,10 +54,6 @@ print(y_train[0])
 print(y_valid[0])
 print(y_test[0])
 
-
-# In[5]:
-
-
 #5. 정답과 이미지 일치성 확인
 import numpy as np
 import matplotlib.pyplot as plt
@@ -84,17 +80,9 @@ for t,v,s in zip(t_rarr,v_rarr,s_rarr):
     plt.title(label_list[np.argmax(y_test[s])])
     ix+=3
 
-
-# In[6]:
-
-
 #6. 모델 구성
 from tensorflow.keras import Input,Sequential
 from tensorflow.keras.layers import Dense, Conv2D, MaxPool2D, Dropout, Flatten
-
-
-# In[7]:
-
 
 cmodel = Sequential()
 cmodel.add(Input((28,28,1)))
@@ -110,16 +98,8 @@ cmodel.add(Dense(32,activation="relu"))
 cmodel.add(Dense(10,activation="softmax"))
 cmodel.compile(loss="categorical_crossentropy",optimizer="adam",metrics=["acc"])
 
-
-# In[8]:
-
-
 fhist = cmodel.fit(x_train,y_train,validation_data=(x_valid,y_valid),\
            epochs=100,batch_size=3000)
-
-
-# In[9]:
-
 
 plt.figure(figsize=(6,2))
 plt.subplot(1,2,1)
@@ -134,17 +114,9 @@ plt.legend()
 plt.title("LOSSES")
 plt.show()
 
-
-# In[11]:
-
-
 # 모델 평가(test 데이터와 라벨을 활용) 손실도와 , 정확률 출력
 lossval,accval = cmodel.evaluate(x_test,y_test)
 print("손실도는 ", int(lossval*10000)/10000, " 정확률은 ", int(accval*10000)/100,"%")
-
-
-# In[13]:
-
 
 #예측값 시각화
 y_pred = cmodel.predict(x_test)
@@ -159,11 +131,7 @@ for ix,rix in enumerate(rarr):
     plt.xticks([]);plt.yticks([])
     plt.xlabel(label_list[np.argmax(y_pred[rix])],color=clr)
 plt.show()
-    
-
-
-# In[16]:
-
+ 
 
 #혼동행렬 - 예측정답과 실제정답을 일치-레이블로 변경
 print(y_test.shape)
@@ -181,15 +149,8 @@ print(y_real[:5])
 print(y_real_pred[:5])
 
 
-# In[18]:
-
-
 cm = sklearn.metrics.confusion_matrix(y_real,y_real_pred,lavels=label_list)
 print(cm)
-
-
-# In[24]:
-
 
 #혼동행렬의 시각화
 import seaborn as sns
@@ -199,23 +160,12 @@ sns.heatmap(cm,fmt="d",cmap="Blues",annot=True,\
 plt.show()
 
 
-# In[26]:
-
-
 #f1 score
 print(sklearn.metrics.classification_report(y_real,y_real_pred))
-
-
-# In[27]:
 
 
 cmodel.save(r"./fashiormist_convlution.keara")
 # 위 방법은 :Sequential의 model.save()
 # 다른 방법 : tf.Reras.models.save_model()
-
-
-# In[ ]:
-
-
 
 
