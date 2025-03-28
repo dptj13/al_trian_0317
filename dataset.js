@@ -65,9 +65,30 @@ d2.set_img(1, {imgtitle: "모델 및 인코더 저장",imglog: "9.훈련된 모�
 d2.set_img(1, {imgtitle: "모델과 인코더 불러오기",imglog: "실제이미지 측정을 위해 훈련된 모델과 라벨 인코더 다시 불러오기",ingurl: "10.https://drive.google.com/file/d/1qgclJaZT8DPUTDEX4L2XEPHQPZwJ9pdN/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/ClassificationSoftmax_fashionmnist/Examp_dassification_fashionMnist.lpynb.py"})
 d2.set_img(1, {imgtitle: "실제 이미지 테스트",imglog: "인터넷의 이미지를 복사하여 (test_ing)모델에 적합하도록 전처리 후 예측값 출력",ingurl: "11.https://drive.google.com/file/d/1J4SUrkQOmVjBSpcsi-LCXY92QStaf2z2/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/ClassificationSoftmax_fashionmnist/Examp_dassification_fashionMnist.lpynb.py"})
 d2.set_img(1, {imgtitle: "실제 이미지 예측결과 시각화",imglog: "실제 이미지를 예측한 결과를 시각화하여 표현",ingurl: "https://drive.google.com/file/d/1GhYHm7N64ooca8N9pkXynMcpbKa1ecMp/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/ClassificationSoftmax_fashionmnist/Examp_dassification_fashionMnist.lpynb.py"})
+d2.set_content("fashion_mnist CNN 모델")//서브 타이틀
+d2.set_img(1, {imgtitle: "fashion_mnist 훈련파일 불러오기",imglog: "구글에서 제공되는 이미지 훈련파일 불러오기와 라벨리스트 만들기",ingurl: "https://drive.google.com/file/d/10G8lFQVFn-J_dEcAJWjblKbZhOBcN6Kz/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classification_Convolution/Exam_fashionmnist_class_conv.py"})
+d2.set_img(1, {imgtitle: "데이터 struct",imglog: "훈련데이터와 정답데이터 수치 및 구조 확인",ingurl: "https://drive.google.com/file/d/10G8lFQVFn-J_dEcAJWjblKbZhOBcN6Kz/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classification_Convolution/Exam_fashionmnist_class_conv.py"})
+d2.set_img(1, {imgtitle: "검증데이터_테스트데이터분할",imglog: "검증데이터 6000개와 테스트데이터 4000개 분할",ingurl: "https://drive.google.com/file/d/10pavQmfc-OAUPuz5M7V0iAg6J3ynisJu/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classification_Convolution/Exam_fashionmnist_class_conv.py"})
+d2.set_img(1, {imgtitle: "데이터셔플 및 전처리 수행",imglog: "문제데이터 표준화와 정답데이터 원핫인코딩 실행",ingurl: "https://drive.google.com/file/d/1X_ZvRQO422obhRl0y9gQaR3PaktWJn7o/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classification_Convolution/Exam_fashionmnist_class_conv.py"})
+d2.set_img(1, {imgtitle: "데이터와 정답 일치성 확인",imglog: "셔플링 및 전처리후 데이터와 정답이 일치하는지 랜덤추출 후 확인 ",ingurl: "https://drive.google.com/file/d/1vV61QO5gas5JjD9gYjGn_c4fK_70NVQO/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classification_Convolution/Exam_fashionmnist_class_conv.py"})
+d2.set_img(1, {imgtitle: "CNN 모델 구축 및 컴파일",imglog: "컨볼루션레이어와 풀링레이어와 완전연결층으로 구현딘 모델 구축",ingurl: "https://drive.google.com/file/d/1wLJdeYm6SEDUm13HWZT_X570M_O3uTPA/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classification_Convolution/Exam_fashionmnist_class_conv.py"})
+d2.set_img(1, {imgtitle: "훈련실행",imglog: "배치사이즈를 3000으로 설정후 100회 훈련 실행",ingurl: "https://drive.google.com/file/d/1XBOc0ZLSATgWh3P7frBvASxet_i1Hh8f/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classification_Convolution/Exam_fashionmnist_class_conv.py"})
+d2.set_img(1, {imgtitle: "훈련결과시각화",imglog: "정확률과 손실율을 시각화 표현으로 과적합 판단",ingurl: "https://drive.google.com/file/d/1wx2zXBQfIwJRQnuKEj83OTyNiRv_ofnd/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classification_Convolution/Exam_fashionmnist_class_conv.py"})
+d2.set_img(1, {imgtitle: "모델평가 및 예측값",imglog: "테스트 데이터를 이용한 모델의 평가와 예측결과에 대한 시각화",ingurl: "https://drive.google.com/file/d/1wFHOPrLtemkPOVfsKnsPoj24UCY5bGdx/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classification_Convolution/Exam_fashionmnist_class_conv.py"})
+d2.set_img(1, {imgtitle: "혼동행렬산출하기",imglog: "정답과 예측값 형태를 일치시킨후 혼동행렬 구하기",ingurl: "https://drive.google.com/file/d/11PUEp1bHs9a0W4_Xuf7Hk3KtNrOjSNRZ/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classification_Convolution/Exam_fashionmnist_class_conv.py"})
+d2.set_img(1, {imgtitle: "혼동행렬시각화 및 fl_score",imglog: "히트맵을 이용한 혼동행렬의 시각화와 리포트 요약기능을 이용한 정밀도,재현율,fl_score출력",ingurl: "https://drive.google.com/file/d/1HTf_KoYfFna4jG7tJW0BXFzwp35wtrFh/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classification_Convolution/Exam_fashionmnist_class_conv.py"})
+d2.set_img(1, {imgtitle: "합성곱층 풀리층 실습",imglog: "합성곱층의 특성맵과 풀링층의 특성 요약에 대한 형태 실습확인",ingurl: "https://drive.google.com/file/d/1YUDrI0TyaNm2aA5ISzdMiOjkhde_yEjA/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/tree/main/Classification_Convolution"})
+
+
+
+
+
+
+
+
 
 d2.set_fill("회귀 모델의 softmax 다중 분류 구현"); //사용자 에필로그
-data_sets.push(d2);
+data_sets.push(d2)
 
 // menu3 =============================================================
 let d3 = new DataSet("서버프로그램구현"); //메인타이틀
