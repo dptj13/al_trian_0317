@@ -227,14 +227,6 @@ tf.keras.models.save_model(model, r"./save_model/fashion_mist_classification.ker
 import pickle
 encoder=None
 with open(r"./save_model/fashion_mnist.classification_encoder","wb")as fp:
-    encoder = pickle.load(fd)
+    encoder = pickle.load(fp)
 
-
-# In[ ]:
-
-
-tf.keras.preprocessing.image_dataset_from_directory(
-     r"D:\jupyter_work\data\test_ing",
-labels='inferred',
-    label
 
