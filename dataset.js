@@ -90,8 +90,18 @@ d2.set_img(2, {imgtitle: "예측 및 확률검증",imglog:"예측은 산점도, 
 d2.set_img(2, {imgtitle: "예측된 정보 출력",imglog:"내일(현재)의 가격 예측 정보 출력",imgurl:"https://drive.google.com/file/d/1ep0q6Zirn1XQsJkPkLPl4_uTLHETFyva/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Encrypto_Anal/EncryptoCoinPredPrice.py"})
 d2.set_img(2, {imgtitle: "예측과 실제 그래프 시각화",imglog:"예측정보와 실제그래프를 동시 표현으로 정확도 판단",imgurl:"https://drive.google.com/file/d/1F1fm-OlSfhQrHIgcKR8ccRhor305rGWn/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Encrypto_Anal/EncryptoCoinPredPrice.py"})
 
-
-
+d2.set_content("")//서브 타이틀
+d2.set_img(3, {imgtitle: "msist데이터수신및셔플링",imglog: "손글씨데이터 다운로드 및 셔플링 수행",imgurl:"https://drive.google.com/file/d/15QiPw6O5leWEXpMpek0e2FE_rrnZrZTV/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/tree/main/Classifi_mnist_conv_advan"})
+d2.set_img(3, {imgtitle: "데이터스케일링 및 원핫인코딩",imglog: "문제데이터 min-max scaling 정답데이터 one hot encoding",imgurl:"https://drive.google.com/file/d/1nfutpOg0l5cFKr1LctJHUyUzY0zL_FRS/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/tree/main/Classifi_mnist_conv_advan"})
+d2.set_img(3, {imgtitle: "훈련콜백함수",imglog: "earlystop callback,ModelCheckpint 객체 생성",imgurl:"https://drive.google.com/file/d/1YJd9BHw50aiO6a-d5w0ReQQ0RqSjdwrI/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/tree/main/Classifi_mnist_conv_advan"})
+d2.set_img(3, {imgtitle: "모델컴파일 및 훈련실행",imglog: "조기종료 및 최적화저장 콜백 주입후 훈련 실행",imgurl:"https://drive.google.com/file/d/157iSeZgHxIUwUn9qbLi4rzQb-7YX1bie/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/tree/main/Classifi_mnist_conv_advan"})
+d2.set_img(3, {imgtitle: "조기종료및체크포인트저장",imglog: "최적의 정확률로 조기종료실행 및 최적의 손실값으로 자동저장 수행",imgurl:"https://drive.google.com/file/d/1N7PT_mFWbNjL577CB3vGewf53Bod7YON/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/tree/main/Classifi_mnist_conv_advan"})
+d2.set_img(3, {imgtitle: "훈련결과시각화",imglog:"훈련결과를 시각화하여 최적의 모델을 선택하는 판단 기준",imgurl:"https://drive.google.com/file/d/1lQvUWUoJyrlw3vTANP4G29H2uY_DKN48/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/tree/main/Classifi_mnist_conv_advan"})
+d2.set_img(3, {imgtitle: "최적모델 선택",imglog:"시각화 결과와 테스트데이터 측정 평가로 정확률과 손실도가 최적화된 모델 선택",imgurl:"https://drive.google.com/file/d/1zFT6zwQqohVYXDKKzwlT5wwGmrwYbvjn/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/tree/main/Classifi_mnist_conv_advan"})
+d2.set_img(3, {imgtitle: "테스트측정",imglog:"테스트결과 시각화",imgurl:"https://drive.google.com/file/d/1iuiuCFqimZsL2IS28irNohTZS8BK2CCA/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/tree/main/Classifi_mnist_conv_advan"})
+d2.set_img(3, {imgtitle: "사용자이미지판별",imglog:"그림판으로 작성하여 저장된 이미지를 불러와서 모델의 판별 테스트",imgurl:"https://drive.google.com/file/d/1fLXOUx6f4My6ti6SSXGTOTtiGktFgINi/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classifi_mnist_conv_advan/mnist_conv_main.py"})
+d2.set_img(3, {imgtitle: "실제이미지판별",imglog:"6개의 실제 이미를 제작하여 모델의 예측능력 판별",imgurl:"https://drive.google.com/file/d/1WgCPoyrjX5p6KbxsvA3HBwfoLg3aUTSh/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classifi_mnist_conv_advan/mnist_conv_main.py"})
+d2.set_img(3, {imgtitle: "콜백함수에 의해 저장된 모델",imglog:"콜백함수에 의해 저장된 모델들의 저장된 스냅샷",imgurl:"https://drive.google.com/file/d/1w1soxGm-Y-6qPWhs0de7J99Kshrw4Gyf/view?usp=drive_link",sourceurl:""})
 
 
 
