@@ -78,7 +78,17 @@ d2.set_img(1, {imgtitle: "모델평가 및 예측값",imglog: "테스트 데이�
 d2.set_img(1, {imgtitle: "혼동행렬산출하기",imglog: "정답과 예측값 형태를 일치시킨후 혼동행렬 구하기",ingurl: "https://drive.google.com/file/d/11PUEp1bHs9a0W4_Xuf7Hk3KtNrOjSNRZ/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classification_Convolution/Exam_fashionmnist_class_conv.py"})
 d2.set_img(1, {imgtitle: "혼동행렬시각화 및 fl_score",imglog: "히트맵을 이용한 혼동행렬의 시각화와 리포트 요약기능을 이용한 정밀도,재현율,fl_score출력",ingurl: "https://drive.google.com/file/d/1HTf_KoYfFna4jG7tJW0BXFzwp35wtrFh/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/blob/main/Classification_Convolution/Exam_fashionmnist_class_conv.py"})
 d2.set_img(1, {imgtitle: "합성곱층 풀리층 실습",imglog: "합성곱층의 특성맵과 풀링층의 특성 요약에 대한 형태 실습확인",ingurl: "https://drive.google.com/file/d/1YUDrI0TyaNm2aA5ISzdMiOjkhde_yEjA/view?usp=drive_link",sourceurl:"https://github.com/dptj13/al_trian_0317/tree/main/Classification_Convolution"})
-
+d2.set_content("암호화폐회귀분류예측")//서브 타이틀
+d2.set_img(2, {imgtitle: "가상화폐데이터수신모듈",imglog:"날짜별 주별 시간별 화폐종별 데이터 수신 모듈",ingurl:"https://drive.google.com/file/d/1ehL1a_3p-D_zJmVwR-7mhcFM4jcvDpAu/view?usp=drive_link",sourceurl:})
+d2.set_img(2, {imgtitle: "데이터셋 생성",imglog:"가격정보와 연관성이 있는 값으로 구성된 데이터셋 생성 모듈",ingurl:"",sourceurl:})
+d2.set_img(2, {imgtitle: "데이터추출",imglog:"문제데이터와 필드리스트 추출모듈",ingurl:""})
+d2.set_img(2, {imgtitle: "데이터수신및 생성모듈호출",imglog:"데이터 수신후 생성 / 추출 모듈 호출",ingurl:"https://drive.google.com/file/d/11lADIS8yQyiPP5P-xcReHEsIxOHCEqEu/view?usp=drive_link",sourceurl:})
+d2.set_img(2, {imgtitle: "산점도 연관성 분석",imglog:"산점도 분석에 의한 가격정보와 연관성이 낮은 필드 제거",ingurl:"https://drive.google.com/file/d/1VOl-9n6BwTRUUvFnOlXrJ_8nLLQCGH3F/view?usp=drive_link",sourceurl:})
+d2.set_img(2, {imgtitle: "회귀분석을 위한 파생값으로 통합",imglog:"회귀분석을 위해 데이터 통합취합",ingurl:"https://drive.google.com/file/d/1hIxiQNAcEXb21ZerBOSPmdu77qg6T33n/view?usp=drive_link",sourceurl:})
+d2.set_img(2, {imgtitle: "심층모델구성",imglog:"다층 레이어로 구성된 회귀모델 구성및 컴파일 훈련",ingurl: "https://drive.google.com/file/d/14WWhfhLQBask4ueOngIzlSFx4r1naGbJ/view?usp=drive_link",sourceurl:})
+d2.set_img(2, {imgtitle: "예측 및 확률검증",imglog:"예측은 산점도, 실제는 선형그래프로 시각화후 예측률 판단",ingurl:"https://drive.google.com/file/d/1UIDOAR6upJv7pmIFAWCDxY2440uYXaFC/view?usp=drive_link",sourceurl:})
+d2.set_img(2, {imgtitle: "예측된 정보 출력",imglog:"내일(현재)의 가격 예측 정보 출력",ingurl:"https://drive.google.com/file/d/1ep0q6Zirn1XQsJkPkLPl4_uTLHETFyva/view?usp=drive_link",sourceurl:})
+d2.set_img(2, {imgtitle: "예측과 실제 그래프 시각화",imglog:"예측정보와 실제그래프를 동시 표현으로 정확도 판단",ingurl:"https://drive.google.com/file/d/1F1fm-OlSfhQrHIgcKR8ccRhor305rGWn/view?usp=drive_link",sourceurl:})
 
 
 

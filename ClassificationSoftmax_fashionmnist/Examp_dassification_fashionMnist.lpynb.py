@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
 
 #Examp_classification_fashionMnist.ipynb
 #1. 필요라이브러리 임포트
@@ -12,8 +10,6 @@ import numpy as np
 from tensorflow.keras import Input, Sequential
 from tensorflow.keras.layers import Dense
 
-
-# In[2]:
 
 
 (x_train, y_train), (x_test, y_test) = tf.keras.datasets.fashion_mnist.load_data()
@@ -32,8 +28,6 @@ y_labels = ["T-shirt/top","Trouser","Pullover","Dress","Coat",
 # 9 	Ankle boot
 
 
-# In[3]:
-
 
 print(x_train.shape)
 print(x_test.shape)
@@ -51,7 +45,6 @@ print(np.max(y_train))
 #정답은 원핫인코딩이 필요 #(sklean train_test_split 분할은 원핫 인코딩 전에 해야합니다.)
 
 
-# In[4]:
 
 
 # 2. 데이터 정규화 min max
@@ -59,8 +52,6 @@ x_train = x_train/255.
 x_test = x_test/255.
 print(x_train[1000,14])
 
-
-# In[5]:
 
 
 #3. np.random.shuffle
@@ -72,8 +63,6 @@ print(x_train.shape)
 print(y_train[1])
 
 
-
-# In[6]:
 
 
 np.random.seed(123)
@@ -87,7 +76,6 @@ for ix in range(len(rint)):
 plt.show()    
 
 
-# In[7]:
 
 
 #4. 정답데이터 원핫 인코딩
@@ -115,8 +103,6 @@ import sklearn
 
 
 
-# In[8]:
-
 
 # y_train = tf.one_hot(y_train,10)
 # y_test = tf.one_hot(y_test,10)
@@ -131,8 +117,6 @@ print(y_train[0])
 print(encoder.one_hot_to_label([res])) 
 
 
-# In[9]:
-
 
 from tensorflow.keras.layers import Flatten
 model = Sequential()
@@ -142,8 +126,6 @@ model.add(Dense(10,activation="softmax"))
 model.compile(loss="categorical_crossentropy",optimizer="SGD",metrics=["acc"])
 fhist = model.fit(x_train,y_train,validation_split=0.2,epochs=200,batch_size=5000)
 
-
-# In[10]:
 
 
 plt.subplot(1,2,1)
@@ -157,14 +139,12 @@ plt.legend()
 plt.show()
 
 
-# In[11]:
 
 
 res = model.evaluate(x_test,y_test)
 print("손실도:",res[0]," 정확률:",int(res[1]*10000)/100,"%")
 
 
-# In[12]:
 
 
 y_pred = model.predict(x_test)
@@ -176,7 +156,6 @@ print(y_test_label[:5])
 print(y_pred_label[:5])
 
 
-# In[13]:
 
 
 #정답레이블로 변경
@@ -192,15 +171,11 @@ print(y_pred_label[:5])
 # print(y_pred_conv[:10])
 
 
-# In[14]:
-
 
 np.random.seed(123)
 rarr = np.random.randint(0,len(y_test_label),10)
 print(rarr)
 
-
-# In[18]:
 
 
 plt.subplots_adjust(wspace=1,hspace=0.001)
@@ -214,14 +189,12 @@ for ix,data in enumerate(rarr):
 plt.show()
 
 
-# In[19]:
 
 
 tf.keras.models.save_model(model, r"./save_model/fashion_mist_classification.keras")
 
 
 
-# In[22]:
 
 
 import pickle
